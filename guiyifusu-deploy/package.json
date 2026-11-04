@@ -2,12 +2,15 @@
   "name": "guiyi-fusu",
   "version": "1.0.0",
   "private": true,
-  "description": "诡异复苏 · 宣发站 + 联机服务（零依赖）",
+  "description": "诡异复苏 · 宣发站 + 联机服务（Netlify Functions + Blobs）",
   "scripts": {
     "build": "node tools/build-site.js",
     "start": "node server/server.js"
   },
+  "dependencies": {
+    "@netlify/blobs": "^11.1.7"
+  },
   "engines": {
-    "node": ">=18"
+    "node": ">=22"
   }
 }

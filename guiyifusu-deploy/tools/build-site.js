@@ -6,6 +6,11 @@ const ROOT = path.join(__dirname, "..", "site");
 const OUT = path.join(ROOT, "public");
 const read = (p) => fs.readFileSync(path.join(ROOT, p), "utf8");
 
+// sync-merge: 让 Netlify Function 与本地服务共用同一份合并逻辑
+try {
+  fs.copyFileSync(path.join(ROOT, "..", "server", "merge.js"), path.join(ROOT, "..", "netlify", "functions", "_merge.js"));
+} catch (e) {}
+
 let html = read("index.html");
 
 // 内联 CSS
