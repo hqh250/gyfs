@@ -1,0 +1,13 @@
+﻿{
+  "name": "guiyi-fusu",
+  "version": "1.0.0",
+  "private": true,
+  "description": "诡异复苏 · 宣发站 + 联机服务（零依赖）",
+  "scripts": {
+    "build": "node tools/build-site.js",
+    "start": "node server/server.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>诡异复苏 · 官方宣发站</title>
+    <meta
+      name="description"
+      content="《诡异复苏》官方宣发站：灵异档案、论坛、公会、好友与体验资格申请。灵异复苏的时代，活着就是胜利。"
+    />
+    <meta name="theme-color" content="#0a0406" />
+    <!-- 网站图标：把图片放到 assets/img/favicon.png 后，将下面 href 改为 assets/img/favicon.png 即可 -->
+    <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg" />
+    <link rel="alternate icon" href="assets/img/logo.webp" />
+    <link rel="stylesheet" href="assets/css/app.css" />
+  </head>
+  <body>
+    <div class="bg-layer" aria-hidden="true">
+      <div class="bg-glow bg-glow-1"></div>
+      <div class="bg-glow bg-glow-2"></div>
+      <div class="bg-fog"></div>
+      <div class="bg-grain"></div>
+      <div class="bg-vignette"></div>
+    </div>
+
+    <header class="nav" id="nav">
+      <div class="nav-inner">
+        <a class="brand" href="#/" aria-label="诡异复苏首页">
+          <img class="brand-mark" src="assets/img/logo.webp" alt="" />
+          <span class="brand-text">
+            <b>诡异复苏</b>
+            <i>GHOST REVIVAL</i>
+          </span>
+        </a>
+
+        <nav class="nav-links" id="navLinks">
+          <a href="#/" data-nav>首页</a>
+          <a href="#/world" data-nav>世界观</a>
+          <a href="#/gameplay" data-nav>玩法</a>
+          <a href="#/news" data-nav>公告</a>
+          <a href="#/forum" data-nav>论坛</a>
+          <a href="#/guilds" data-nav>公会</a>
+          <a href="#/apply" data-nav>体验资格</a>
+        </nav>
+
+        <div class="nav-right" id="navRight"></div>
+
+        <button class="nav-toggle" id="navToggle" aria-label="菜单" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+      <div class="nav-progress" id="navProgress"></div>
+    </header>
+
+    <div class="mobile-menu" id="mobileMenu" aria-hidden="true"></div>
+
+    <main class="view container" id="view"></main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <img src="assets/img/logo.webp" alt="" />
+          <div>
+            <b>诡异复苏</b>
+            <p>灵异复苏的时代，活着就是胜利。</p>
+          </div>
+        </div>
+        <div class="footer-cols">
+          <div>
+            <h4>探索</h4>
+            <a href="#/world">世界观</a>
+            <a href="#/gameplay">核心玩法</a>
+            <a href="#/news">更新公告</a>
+          </div>
+          <div>
+            <h4>社区</h4>
+            <a href="#/forum">灵异论坛</a>
+            <a href="#/guilds">公会大厅</a>
+            <a href="#/apply">体验资格</a>
+          </div>
+          <div>
+            <h4>账户</h4>
+            <a href="#/me">个人设置</a>
+            <a href="#/messages/dm">消息中心</a>
+            <a href="#/admin">管理后台</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 今界工作室 · 本站为《神秘复苏》同人企划，非官方站点</span>
+        <span class="footer-status"><i class="net-status local" id="netStatus">本地模式</i> Designed in the dark</span>
+      </div>
+    </footer>
+
+    <div id="modalRoot"></div>
+    <div id="toastRoot" class="toast-root" aria-live="polite"></div>
+
+    <script src="assets/js/data.js"></script>
+    <script src="assets/js/store.js"></script>
+    <script src="assets/js/art.js"></script>
+    <script src="assets/js/ambient.js"></script>
+    <script src="assets/js/icons.js"></script>
+    <script src="assets/js/ui.js"></script>
+    <script src="assets/js/views.js"></script>
+    <script src="assets/js/messages.js"></script>
+    <script src="assets/js/admin.js"></script>
+    <script>
+      /* 联机服务地址（可选）。例如：window.API_BASE = "https://api.example.com"; 留空则同源 */
+      window.API_BASE = "";
+    </script>
+    <script src="assets/js/sync.js"></script>
+    <script src="assets/js/app.js"></script>
+  </body>
+</html>
